@@ -8,7 +8,7 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	unsigned long int i = 0;
 
 	while (i < (sizeof(alphabet)-1))
 	{
