@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
  * main - program entry point
  *
@@ -8,7 +8,14 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	puts(alphabet);
+	unsigned long int i = 0;
+
+	while( i < sizeof(alphabet))
+	{
+		putchar(alphabet[i]);
+		i++;
+	}
+	putchar('\n');
 
 	return (0);
 }
