@@ -8,9 +8,9 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	unsigned long int i = 0;
+	int i = 0;
 
-	while (i < sizeof(alphabet))
+	while (i < (sizeof(alphabet)-1))
 	{
 		putchar(alphabet[i]);
 		i++;
