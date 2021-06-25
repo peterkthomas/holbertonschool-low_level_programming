@@ -13,8 +13,6 @@ int main(void)
 
 	while (str[i] >= 0)
 	{
-		if (str[i] != 'q' && str[i] != 'e')
-			putchar(str[i]);
 		i--;
 	}
 
