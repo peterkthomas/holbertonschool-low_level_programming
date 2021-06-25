@@ -8,31 +8,21 @@
  */
 int main(void)
 {
-	int i;
-	int j;
+	int i, j; 
 
-	int k;
-	int l;
-
-	/* ij  kl */ 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = i; j <= '9'; j++)
+		for (j = i + 1; j <= 99; j++) /* j is always 1 higher */
 		{
-
-			for (k = '0'; k <= '9'; k++)
+			putchar((i / 10) + '0'); /* tens */
+			putchar((i % 10) + '0'); /* ones */
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i != 98)
 			{
-				for(l = k; l <= '9'; l++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(l);
-					putchar(',');
-					putchar(' ');
-
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
