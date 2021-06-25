@@ -13,6 +13,7 @@ int main(void)
 
 	while (str[i] >= 0)
 	{
+		putchar(str[i]);
 		i--;
 	}
 
