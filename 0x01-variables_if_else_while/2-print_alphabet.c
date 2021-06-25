@@ -10,12 +10,11 @@ int main(void)
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	unsigned long int i = 0;
 
-	while( i < sizeof(alphabet))
+	while (i < sizeof(alphabet))
 	{
 		putchar(alphabet[i]);
 		i++;
 	}
-	putchar('\n');
 
 	return (0);
 }
