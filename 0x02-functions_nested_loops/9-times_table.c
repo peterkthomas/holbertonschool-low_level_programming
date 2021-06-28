@@ -9,14 +9,16 @@ void times_table(void)
 	int i;
 	int j;
 	int result;
+	int result_tens;
+	int result_ones;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
 			result = i * j;
-			int result_tens = result / 10;
-			int result_ones = result % 10;
+			result_tens = result / 10;
+			result_ones = result % 10;
 
 			if (result < 10)
 				_putchar('result_ones');
