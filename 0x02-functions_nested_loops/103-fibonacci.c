@@ -24,7 +24,7 @@ int main(void)
 			total += next;
 	}
 
-	printf("%lu \n", total); /* print the number */
+	printf("%lu\n", total); /* print the number */
 
 	return (0);
 }
