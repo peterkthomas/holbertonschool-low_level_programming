@@ -21,7 +21,10 @@ void times_table(void)
 			result_ones = result % 10;
 
 			if (result < 10)
+			{
+				_putchar(' ');
 				_putchar(result_ones + '0');
+			}
 			else
 			{
 				_putchar(result_tens + '0');
@@ -31,7 +34,6 @@ void times_table(void)
 			if (j < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 			else
