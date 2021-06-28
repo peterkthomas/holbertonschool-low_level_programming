@@ -13,10 +13,10 @@ int main(void)
 	unsigned long int fib_two = 2; /* fib number 2 */
 	unsigned long int next = fib_one + fib_two; /* result of 1+2 */
 
-	printf("%ul, %ul, ", fib_one, fib_two);
+	printf("%lu, %lu, ", fib_one, fib_two);
 	for (i = 3; i < 50; ++i)
 	{
-		printf("%ul, ", next);
+		printf("%lu, ", next);
 		fib_one = fib_two;
 		fib_two = next;
 		next = fib_one + fib_two;
