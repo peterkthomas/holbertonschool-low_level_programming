@@ -6,9 +6,9 @@
  */
 void print_times_table(int n)
 {
-	int i, j, result, result_hundreds, result_tens, result_ones;
+	int i, j, result;
 
-	if(n <= 15 && n >= 0)
+	if (n <= 15 && n >= 0)
 		for (i = 0; i <= n; i++)
 		{
 			for (j = 0; j <= n; j++)
@@ -18,7 +18,7 @@ void print_times_table(int n)
 				{
 					_putchar(result / 100 + '0'); /* hundreds */
 					_putchar((result / 10) % 10 + '0'); /* tens */
-					_putchar(result_ones + '0'); /* ones */
+					_putchar(result + '0'); /* ones */
 				}
 				else if (result > 9) /* 2 character result */
 				{
