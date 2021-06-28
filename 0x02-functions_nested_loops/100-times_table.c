@@ -35,7 +35,7 @@ void print_times_table(int n)
 				}
 				else
 					_putchar(result + '0'); /* zero */
-				if(result != n) /* we are not at the final number */
+				if (j != n) /* we are not at the final number */
 				{
 					_putchar(',');
 					_putchar(' ');
