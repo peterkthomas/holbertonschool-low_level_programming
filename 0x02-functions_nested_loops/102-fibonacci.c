@@ -16,10 +16,12 @@ int main(void)
 	printf("%lu, %lu, ", fib_one, fib_two);
 	for (i = 2; i < 50; ++i)
 	{
-		printf("%lu, ", next);
+		printf("%lu", next);
 		fib_one = fib_two;
 		fib_two = next;
 		next = fib_one + fib_two;
+		if( i < 49)
+			printf(", ");
 	}
 
 	printf("\n"); /* print the number */
