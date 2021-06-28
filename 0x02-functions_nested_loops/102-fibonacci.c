@@ -20,7 +20,7 @@ int main(void)
 		fib_one = fib_two;
 		fib_two = next;
 		next = fib_one + fib_two;
-		if( i < 49)
+		if (i < 49)
 			printf(", ");
 	}
 
