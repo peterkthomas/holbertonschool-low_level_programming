@@ -19,7 +19,7 @@ int main(void)
 		fib_one = fib_two;
 		fib_two = next;
 		next = fib_one + fib_two;
-		
+
 		if (next % 2 == 0)
 			total += next;
 	}
