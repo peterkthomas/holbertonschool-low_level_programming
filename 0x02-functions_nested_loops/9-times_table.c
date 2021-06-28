@@ -28,6 +28,11 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(result_ones + '0');
 			}
+			else
+			{
+				_putchar(result_tens + '0');
+				_putchar(result_ones + '0');
+			}
 
 			if (j < 9)
 			{
