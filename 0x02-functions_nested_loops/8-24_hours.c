@@ -6,12 +6,15 @@
  */
 void jack_bauer(void)
 {
-	for (int i = 0; i < 24; i++)
+	int i = 0;
+	int j = 0;
+
+	for (i = 0; i < 24; i++)
 	{
 		int hour_tens = i / 10;
 		int hour_ones = i % 10;
 
-		for (int j = 0; j < 60; j++)
+		for (j = 0; j < 60; j++)
 		{
 			int minute_tens = j / 10;
 			int minute_ones = j % 10;
