@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	int i;
 	unsigned long int fib_one = 1; /* fib number 1 */
 	unsigned long int fib_two = 2; /* fib number 2 */
 	unsigned long int next = fib_one + fib_two; /* result of 1+2 */
@@ -25,7 +24,7 @@ int main(void)
 			total += next;
 	}
 
-	printf("%ul \n", total); /* print the number */
+	printf("%lu \n", total); /* print the number */
 
 	return (0);
 }
