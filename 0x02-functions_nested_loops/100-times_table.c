@@ -14,26 +14,33 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				result = i * j;
-				result_hundreds = result / 100;
-				result_tens = (result / 10) % 10;
-				result_ones = (result % 100) % 10;
-
-				if (result < 10)
-					_putchar(result_ones);
-				else
+				if (result > 99) /* 3 character result */
 				{
-					_putchar(result_hundreds + '0');
-					_putchar(result_tens + '0');
-					_putchar(result_ones + '0');
+					_putchar(result / 100 + '0'); /* hundreds */
+					_putchar((result / 10) % 10 + '0'); /* tens */
+					_putchar(result_ones + '0'); /* ones */
 				}
-
-				if (j < 9)
+				else if (result > 9) /* 2 character result */
+				{
+					_putchar(' '); /* hundreds */
+					_putchar(result / 10 + '0'); /* tens */
+					_putchar(result % 10 + '0'); /* ones */
+				}
+				else if (j != 0) /* 1 character result 1 - 9 */
+				{
+					_putchar(' '); /* hundreds */
+					_putchar(' '); /* tens */
+					_putchar(result + '0'); /* ones */
+				}
+				else
+					_putchar(result + '0'); /* zero */
+				if(result != n) /* we are not at the final number */
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
-				else
-					_putchar('\n');
+				
 			}
 		}
+		_putchar('\n');
 }
