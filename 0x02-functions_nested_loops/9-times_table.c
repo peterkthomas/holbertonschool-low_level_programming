@@ -21,7 +21,6 @@ void times_table(void)
 			result_ones = result % 10;
 			if (!result)
 			{
-				_putchar(' ');
 				_putchar('0');
 			}
 			else if (result < 10)
