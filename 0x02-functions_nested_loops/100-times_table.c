@@ -19,9 +19,10 @@ void print_times_table(int n)
 				result_ones = (result % 100) % 10;
 
 				if (result < 10)
-					_putchar('result_ones');
+					_putchar(result_ones);
 				else
 				{
+					_putchar(result_hundreds + '0');
 					_putchar(result_tens + '0');
 					_putchar(result_ones + '0');
 				}
