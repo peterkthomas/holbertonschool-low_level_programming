@@ -17,7 +17,7 @@ void print_times_table(int n)
 				result = i * j;
 				if (result > 99) /* 3 character result */
 				{
-					_putchar(result / 100 + '0'); /* hundreds */
+					_putchar(result / 10 + '0'); /* hundreds */
 					_putchar((result / 10 % 10) + '0'); /* tens */
 					_putchar(result + '0'); /* ones */
 				}
