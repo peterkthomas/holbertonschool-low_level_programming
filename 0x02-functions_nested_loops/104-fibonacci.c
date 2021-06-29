@@ -18,6 +18,7 @@ int main(void)
 	unsigned long fib_temp_a;
 	unsigned long fib_temp_b;
 	unsigned long reduce;
+
 	for (i = 0; i < 98; i++)
 	{
 		if (fib_one_a)
