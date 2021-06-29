@@ -8,23 +8,34 @@
  */
 int main(void)
 {
+
 	int i;
-	unsigned long int fib_one = 1; /* fib number 1 */
-	unsigned long int fib_two = 2; /* fib number 2 */
-	unsigned long int next = fib_one + fib_two; /* result of 1+2 */
-
-	printf("%lu, %lu, ", fib_one, fib_two);
-	for (i = 0; i < 99; i++)
+	unsigned long billiondiv = 1000000000;
+	unsigned long fib_one_a = 0;
+	unsigned long fib_one_b = 1;
+	unsigned long fib_two_a = 0;
+	unsigned long fib_two_b = 2;
+	unsigned long fib_temp_a;
+	unsigned long fib_temp_b;
+	unsigned long reduce;
+	for (i = 0; i < 98; i++)
 	{
-		printf("%lu", next);
-		fib_one = fib_two;
-		fib_two = next;
-		next = fib_one + fib_two;
-		if (i < 98)
+		if (fib_one_a)
+			printf("%lu", fib_one_a); 
+
+		printf("%lu", fib_one_b);
+
+		if (i < 97)
 			printf(", ");
+		fib_temp_a = fib_one_a;
+		fib_temp_b = fib_one_b;
+		fib_one_a = fib_two_a;
+		fib_one_b = fib_two_b;
+		fib_two_a = fib_two_a + fib_temp_a;
+		fib_two_b = fib_two_b + fib_temp_b;
+		reduce = fib_two_b / billiondiv;
+		fib_two_b = fib_two_b % billiondiv;
+		fib_two_a = fib_two_a + reduce;
 	}
-
-	printf("\n"); /* print the number */
-
-	return (0);
+	printf("\n");
 }
