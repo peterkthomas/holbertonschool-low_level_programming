@@ -22,7 +22,7 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		if (fib_one_a)
-			printf("%lu%09%lu", fib_one_a);
+			printf("%lu%09%lu", fib_one_a, fib_one_b);
 		else
 			printf("%lu", fib_one_b);
 
