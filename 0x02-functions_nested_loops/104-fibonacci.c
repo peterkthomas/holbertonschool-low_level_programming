@@ -38,4 +38,6 @@ int main(void)
 		fib_two_a = fib_two_a + reduce;
 	}
 	printf("\n");
+
+	return (0);
 }
