@@ -12,11 +12,11 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		while (i < size) /** loop 12 times */ 
+		while (i < size)
 		{
-			for (j = 0; j < (size - i); j++) /* write 12 spaces, 11 spaces, etc. */
+			for (j = 1; j < (size - i); j++) /* write 12 spaces, 11 spaces, etc. */
 				_putchar(' ');
-			while(j <= size)
+			while (j <= size)
 			{
 				_putchar('#');
 				j++;
