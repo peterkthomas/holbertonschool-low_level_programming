@@ -11,7 +11,8 @@ void puts2(char *str)
 	while (*str) /* loop through char array by pointer */
 	{
 		str += 2;
-		_putchar(*str);
+		if(str)
+			_putchar(*str);
 	}
 	_putchar('\n');
 }
