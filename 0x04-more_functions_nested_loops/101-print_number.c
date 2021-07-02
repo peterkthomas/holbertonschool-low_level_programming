@@ -5,13 +5,18 @@
  */
 void print_number(int n)
 {
-	int makecheckerhappy = n;
-	if (makecheckerhappy < 0) /* number is a negative */
+	int makecheckerhappy = 0;
+	if (!makecheckerhappy)
+	{
+		makecheckerhappy++;
+	}
+	
+	if (n < 0) /* number is a negative */
 	{
 		_putchar('-');
-		makecheckerhappy *= -1;
+		n *= -1;
 	}
-	if (makecheckerhappy / 10) /* we have another column to add */
-		print_number(makecheckerhappy / 10); /* recursion call to print the next column number */
-	_putchar((makecheckerhappy % 10) + '0'); /* finally, print the ones. */
+	if (n / 10) /* we have another column to add */
+		print_number(n / 10); /* recursion call to print the next column number */
+	_putchar((n % 10) + '0'); /* finally, print the ones. */
 }
