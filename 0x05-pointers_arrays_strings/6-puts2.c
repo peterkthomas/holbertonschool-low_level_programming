@@ -12,8 +12,6 @@ void puts2(char *str)
 	while (str[i]) /* loop through char array by pointer */
 		i++;
 
-	i -= 1; /* i is now length of string */
-
 	for (j = 0; j < i; j += 2)
 		_putchar(str[j]);
 	_putchar('\n');
