@@ -5,12 +5,6 @@
  */
 void print_number(int n)
 {
-	int makecheckerhappy = 0;
-	if (!makecheckerhappy)
-	{
-		makecheckerhappy++;
-	}
-	
 	if (n < 0) /* number is a negative */
 	{
 		_putchar('-');
