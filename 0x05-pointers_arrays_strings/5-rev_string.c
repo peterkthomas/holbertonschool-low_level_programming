@@ -3,7 +3,7 @@
 
 /**
  * rev_string - writes an array of chars in reverse
- * @str: pointer to string
+ * @s: pointer to string
  *
  */
 void rev_string(char *s)
