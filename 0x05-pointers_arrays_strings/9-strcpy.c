@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * strcpy - copies one string buffer to another
+ * _strcpy - copies one string buffer to another
  * @dest: destination string buffer
  * @src: source string buffer
  *
@@ -9,13 +9,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int i;
 
-	while (src[i] != '\0') /* copy the whole string */
-	{
+	for (i = 0; src[i] != '\0'; i++)
 		dest[i] = src[i];
-		i++;
-	}
+
+	dest[i] = '\0';
 
 	return (dest);
 }
