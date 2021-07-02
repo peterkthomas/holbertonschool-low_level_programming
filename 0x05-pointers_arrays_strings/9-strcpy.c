@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	while (src[i]) /* copy the whole string */
+	while (src[i] != '\0') /* copy the whole string */
 	{
 		dest[i] = src[i];
 		i++;
