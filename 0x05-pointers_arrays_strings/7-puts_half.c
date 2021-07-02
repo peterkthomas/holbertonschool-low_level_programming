@@ -14,7 +14,10 @@ void puts_half(char *str)
 	while (str[i]) /* loop through char array by pointer */
 		i++;
 
-	start = i / 2;
+	if (start % 2 != 0)
+		start = ((i - 1) / 2);
+	else
+		start = i / 2;
 
 	for (j = start; j < i; j++)
 		_putchar(str[j]);
