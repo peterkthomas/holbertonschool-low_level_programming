@@ -5,9 +5,10 @@
  * @a: pointer to int a
  * @b: pointer to int b
  */
-void reset_to_98(int *a, int *b)
+void swap_int(int *a, int *b)
 {
-	int temp = *a;
+	int temp; 
+	temp = *a;
 	*a = *b;
 	*b = temp;
 }
