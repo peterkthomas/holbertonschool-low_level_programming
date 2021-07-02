@@ -5,7 +5,8 @@
  */
 void print_number(int n)
 {
-	int mch = n;
+	unsigned int mch = 0;
+	mch = n;
 
 	if (mch < 0) /* number is a negative */
 	{
