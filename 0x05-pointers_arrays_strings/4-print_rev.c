@@ -12,9 +12,10 @@ void print_rev(char *str)
 	while (str[i]) /* loop through char array by pointer */
 		i++;
 
+	i -= 1;
 	while (i >= 0)
 	{
-		_putchar(str[i-1]);
+		_putchar(str[i]);
 		i--;
 	}
 	_putchar('\n');
