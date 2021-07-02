@@ -7,12 +7,14 @@
  */
 void puts2(char *str)
 {
-	_putchar(*str);
-	while (*str) /* loop through char array by pointer */
-	{
-		str += 2;
-		if(str)
-			_putchar(*str);
-	}
+	int i = 0;
+	int j = 0;
+	while (str[i]) /* loop through char array by pointer */
+		i++;
+
+	i -= 1; /* i is now length of string */
+
+	for (j = 0; j < i; j += 2)
+		_putchar(str[j]);
 	_putchar('\n');
 }
