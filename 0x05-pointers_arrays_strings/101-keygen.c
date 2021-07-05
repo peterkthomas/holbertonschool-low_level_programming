@@ -11,7 +11,7 @@ int main(void)
 
 	long val = 0;
 	char range[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
-	int length = 29;
+	int length = 30;
 	
 	srand(time(0));
 	while (val != 2772) 
