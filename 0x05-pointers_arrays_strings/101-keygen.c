@@ -4,15 +4,16 @@
 
 int main(void)
 {
-	srand(time(0));
-	char range[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
-	char *str_rand = NULL;
-	int length = 29;
+	
 	int i;
 	int key;
+	char *str_rand = NULL;
 
 	long val = 0;
-
+	char range[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
+	int length = 29;
+	
+	srand(time(0));
 	while (val != 2772) 
 	{
 		str_rand = malloc(sizeof(char) * length - 1);
@@ -25,7 +26,7 @@ int main(void)
 
 		str_rand[length] = '\0';
 
-		for( i = 0; i < length;i++)
+		for (i = 0; i < length;i++)
 		{
 			val = str_rand[0] + str_rand[1] + str_rand[2] + str_rand[3] + str_rand[4] + str_rand[5];
 			val += str_rand[6] + str_rand[7] + str_rand [ 8] + str_rand [9] + str_rand[10] + str_rand[11];
