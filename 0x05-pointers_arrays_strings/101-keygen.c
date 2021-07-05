@@ -15,6 +15,7 @@ int main(void)
 	srand(time(0));
 	while (val != 2772) 
 	{
+		val = 0;
 		str_rand = malloc(sizeof(char) * length - 1);
 
 		for (i = 0; i < length; i++)
@@ -22,9 +23,6 @@ int main(void)
 			key = rand() % 68;
 			str_rand[i] = range[key];
 		}
-		str_rand[length] = '\0';
-		val = 0;
-
 		for (i = 0; i < length; i++)
 			val += str_rand[i];
 	}
