@@ -16,13 +16,14 @@ int main(void)
 	while (val != 2772) 
 	{
 		val = 0;
-		str_rand = malloc(sizeof(char) * length - 1);
+		str_rand = malloc(sizeof(char) * (length - 1));
 
 		for (i = 0; i < length; i++)
 		{
 			key = rand() % 68;
 			str_rand[i] = range[key];
 		}
+
 		for (i = 0; i < length; i++)
 			val += str_rand[i];
 	}
