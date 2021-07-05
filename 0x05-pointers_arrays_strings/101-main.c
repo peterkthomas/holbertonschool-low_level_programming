@@ -4,13 +4,14 @@
 
 int main(void)
 {
-	char range[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
-	char *str_rand = NULL;
-	int length = 29;
+	
 	int i;
 	int key;
 
 	long val = 0;
+	char range[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
+	int length = 29;
+	char *str_rand = NULL;
 	
 	srand(time(0));
 
