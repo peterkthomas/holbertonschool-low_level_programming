@@ -13,14 +13,14 @@ char *rot13(char *str)
 
 	while (str[i])
 	{
-		if(str[i] >= 'A' && str[i] <= 'Z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			if((rotval + str[i]) <= 'Z')
+			if ((rotval + str[i]) <= 'Z')
 				str[i] = rotval + str[i];
 			else
 				str[i] -= rotval;
 		}
-		else if (str[i] >='a' && str[i] <= 'z')
+		else if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			if ((rotval + str[i]) <= 'z')
 				str[i] = rotval + str[i];
