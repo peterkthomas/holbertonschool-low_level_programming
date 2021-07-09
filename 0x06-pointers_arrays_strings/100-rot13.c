@@ -9,24 +9,23 @@
 char *rot13(char *str)
 {
 	int i = 0;
-	int rotval = 13;
+	int j;
+	char forward[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char backward[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (str[i])
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		j = 0;
+		while (j < 52)
 		{
-			if ((rotval + str[i]) <= 'Z')
-				str[i] = rotval + str[i];
-			else
-				str[i] -= rotval;
+			if (str[i] == forward[j])
+			{
+				str[i] = backward[j];
+				break;
+			}
+			j++;
 		}
-		else if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			if ((rotval + str[i]) <= 'z')
-				str[i] = rotval + str[i];
-			else
-				str[i] -= rotval;
-		}
+
 		i++;
 	}
 
