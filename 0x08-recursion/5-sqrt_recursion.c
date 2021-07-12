@@ -20,7 +20,7 @@ int finder(int a, int b)
  * _sqrt_recursion - returns sqrt of a number
  * @n: number to check
  *
- * Return: Square root / -1 
+ * Return: Square root / -1
  */
 int _sqrt_recursion(int n)
 {
