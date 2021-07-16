@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 	if (argc && argv)
 	{
 		while (*argv)
+		{
 			printf("%s\n", *argv);
+			argv++;
+		}
 	}
 
 	return (0);
