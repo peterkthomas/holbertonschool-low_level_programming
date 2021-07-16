@@ -21,5 +21,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
+	print("Error\n");
+
 	return (1);
 }
