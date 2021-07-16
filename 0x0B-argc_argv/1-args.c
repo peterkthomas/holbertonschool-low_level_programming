@@ -3,7 +3,8 @@
 
 /**
  * main - program entry
- * @argc - argument count
+ * @argc: argument count
+ * @argv: argument variables
  *
  * Return: 0
  */
