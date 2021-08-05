@@ -34,17 +34,16 @@ void print_all(const char * const format, ...)
 				printf("%d%s", va_arg(vlist, int), separator);
 				break;
 			case 'f':
-				printf("%f%s", va_arg(vlist, float), seperator);
+				printf("%f%s", va_arg(vlist, double), separator);
 			case 's':
 				str = va_arg(vlist, char*);
 				if (!str)
 					str = "(nil)";
-				printf("%s%s", str, sep);
+				printf("%s%s", str, separator);
 				break;
 		}
 		n++;
 	}
 	printf("\n");
 	va_end(vlist);
-}
 }
