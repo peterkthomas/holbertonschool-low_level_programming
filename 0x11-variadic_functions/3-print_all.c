@@ -17,10 +17,10 @@ void print_all(const char * const format, ...)
 
 	va_start(vlist, format);
 
-	while (format[i])
+	while (format && format[i])
 		i++;
 
-	while (format[n])
+	while (format && format[n])
 	{
 		if (n == (i - 1))
 			separator = "";
