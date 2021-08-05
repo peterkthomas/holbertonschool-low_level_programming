@@ -35,6 +35,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 'f':
 				printf("%f%s", va_arg(vlist, double), separator);
+				break;
 			case 's':
 				str = va_arg(vlist, char*);
 				if (!str)
