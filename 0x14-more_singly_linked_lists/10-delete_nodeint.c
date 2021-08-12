@@ -29,7 +29,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 
-	while (local_index < index)
+	while (list && (local_index < index))
 	{
 		list = list->next;
 		local_index++;
