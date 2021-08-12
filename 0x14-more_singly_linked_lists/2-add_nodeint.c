@@ -8,31 +8,17 @@
  * Return: Null on fail, otherwise new element address
  */
 
-listint_t *add_node(list_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	char *duplicate;
-	int length = 0;
 	listint_t *newlist;
 
-	newlist = malloc(sizeof(list_t));
+	newlist = malloc(sizeof(listint_t));
 
 	if (newlist == NULL)
 		return (NULL);
 
-	duplicate = strdup(str);
-
-	if (duplicate == NULL)
-	{
-		free(newlist);
-		return (NULL);
-	}
-
-	while (str[length])
-		length++;
-
-	newlist->str = duplicate;
-	newlist->len = length;
 	newlist->next = *head;
+	newlist->n = n;
 
 	*head = newlist;
 
