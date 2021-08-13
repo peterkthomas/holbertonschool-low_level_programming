@@ -27,10 +27,10 @@ unsigned int binary_to_uint(const char *b)
 
 	while (b[i] != '\0')
 	{
+		power *= 2;
 		if (b[i] == '1')
 			n += power;
 		i++;
-		power *= 2;
 	}
 
 	return (n);
