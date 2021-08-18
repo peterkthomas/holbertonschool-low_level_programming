@@ -12,8 +12,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fd;
 	int status;
 
-	if (!filename || !text_content)
+	if (!filename)
 		return (-1);
+
+	if(!text_content)
+		text_content = "";
 
 	fd = open(filename, O_RDWR | O_APPEND);
 
@@ -21,7 +24,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 
 	status = write(fd, text_content, strlen(text_content));
-	close (fd);
+	close(fd);
 
 	if (status == -1)
 		return (-1);
