@@ -4,7 +4,7 @@
  * read_textfile - read text file and print
  * @filename: string of file name
  * @letters: number of characters to output
- * 
+ *
  * Return: Number of characters read, 0 at EOF
  */
 
