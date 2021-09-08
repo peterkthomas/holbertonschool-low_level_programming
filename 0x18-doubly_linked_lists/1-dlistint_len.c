@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - Lists number of dlistint_t nodes
- * @nodes: number of nodes
+ * @h: pointer to list start
  *
  * Return: number of nodes
  */
