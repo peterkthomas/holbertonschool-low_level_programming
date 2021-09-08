@@ -9,6 +9,8 @@
  * Description: doubly linked list node structure
  * for Holberton project
  */
+
+#include <stdio.h>
 #include <stddef.h>
 typedef struct dlistint_s
 {
